@@ -3,7 +3,6 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.0.0"
 
-
 gem "faker"
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.3", ">= 7.0.3.1"
@@ -55,10 +54,7 @@ group :development, :test do
   #gem "pg"
 end
 
-group :production do
-  gem "graphql"
-end
-
+gem "graphql"
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"

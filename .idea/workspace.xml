@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ec9c898e-10a4-4cd0-94f8-b443e6e6c044" name="Changes" comment="gem 'sqlite3' setup for deploy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +155,7 @@
       <updated>1659220321353</updated>
       <workItem from="1659220325685" duration="8836000" />
       <workItem from="1659264101439" duration="8092000" />
-      <workItem from="1659272491045" duration="9216000" />
+      <workItem from="1659272491045" duration="10859000" />
     </task>
     <task id="LOCAL-00001" summary="Project created">
       <created>1659220862139</created>
@@ -240,7 +241,21 @@
       <option name="project" value="LOCAL" />
       <updated>1659288057369</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="gem 'sqlite3' setup for deploy">
+      <created>1659288639190</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1659288639190</updated>
+    </task>
+    <task id="LOCAL-00014" summary="gem 'sqlite3' setup for deploy">
+      <created>1659288724376</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1659288724376</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
