@@ -4,6 +4,11 @@ Rails.application.routes.draw do
   end
   post "/graphql", to: "graphql#execute"
 
-  root "main#index"
+  root to: 'main#index'
+  get 'about', to: 'about#index'
+  get 'home', to:'home#new'
+  post 'home', to:'home#create'
+  get 'information', to:'information#index'
+
 
 end

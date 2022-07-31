@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ec9c898e-10a4-4cd0-94f8-b443e6e6c044" name="Changes" comment="Project created">
-      <change afterPath="$PROJECT_DIR$/app/graphql/mutations/create_repository.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/graphql/mutations/create_user.rb" afterDir="false" />
+    <list default="true" id="ec9c898e-10a4-4cd0-94f8-b443e6e6c044" name="Changes" comment="graphQl implemented&#10;-created User Model&#10;-created Repository Model&#10;-created create_user.rb file with Mutation for User&#10;-created create_repository.rb file with Mutation for Repository">
+      <change afterPath="$PROJECT_DIR$/app/views/about/index.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/home/create.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/home/new.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/information/index.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/main/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/shared/_navbar.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/main_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/main_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/main/index.html.erb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +22,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
+        <entry key="$PROJECT_DIR$" value="main" />
         <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
@@ -32,17 +37,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/romanohorilko/Documents/RubyProjects/testApp&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.ruby.settings.RubyActiveModuleSdkConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/romanohorilko/Documents/RubyProjects/TestApp/app/views/main",
+    "nodejs_package_manager_path": "npm",
+    "ruby.rails.projectView.checked": "true",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.ruby.settings.RubyActiveModuleSdkConfigurable"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/views/main" />
+      <recent name="$PROJECT_DIR$/app/views/shared" />
+      <recent name="$PROJECT_DIR$/app/views/information" />
+    </key>
+  </component>
   <component name="RunManager" selected="Rails.Development: testApp">
     <configuration name="Development: testApp" type="RailsRunConfigurationType" factoryName="Rails">
       <module name="testApp" />
@@ -152,7 +164,7 @@
       <option name="presentableId" value="Default" />
       <updated>1659220321353</updated>
       <workItem from="1659220325685" duration="8836000" />
-      <workItem from="1659264101439" duration="1381000" />
+      <workItem from="1659264101439" duration="4215000" />
     </task>
     <task id="LOCAL-00001" summary="Project created">
       <created>1659220862139</created>
@@ -161,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659220862139</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="graphQl implemented&#10;-created User Model&#10;-created Repository Model&#10;-created create_user.rb file with Mutation for User&#10;-created create_repository.rb file with Mutation for Repository">
+      <created>1659265869218</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1659265869218</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,7 +191,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/development" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -180,6 +211,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Project created" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project created" />
+    <MESSAGE value="graphQl implemented&#10;-created User Model&#10;-created Repository Model&#10;-created create_user.rb file with Mutation for User&#10;-created create_repository.rb file with Mutation for Repository" />
+    <option name="LAST_COMMIT_MESSAGE" value="graphQl implemented&#10;-created User Model&#10;-created Repository Model&#10;-created create_user.rb file with Mutation for User&#10;-created create_repository.rb file with Mutation for Repository" />
   </component>
 </project>
