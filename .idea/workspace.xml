@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ec9c898e-10a4-4cd0-94f8-b443e6e6c044" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/views/main/index.html.erb" afterDir="false" />
+    <list default="true" id="ec9c898e-10a4-4cd0-94f8-b443e6e6c044" name="Changes" comment="Project created">
+      <change afterPath="$PROJECT_DIR$/app/graphql/mutations/create_repository.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/graphql/mutations/create_user.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,6 +16,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -21,17 +32,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/romanohorilko/Documents/RubyProjects/testApp",
-    "nodejs_package_manager_path": "npm",
-    "ruby.rails.projectView.checked": "true",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.ruby.settings.RubyActiveModuleSdkConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/romanohorilko/Documents/RubyProjects/testApp&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.ruby.settings.RubyActiveModuleSdkConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Rails.Development: testApp">
     <configuration name="Development: testApp" type="RailsRunConfigurationType" factoryName="Rails">
       <module name="testApp" />
@@ -140,8 +151,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1659220321353</updated>
-      <workItem from="1659220325685" duration="350000" />
+      <workItem from="1659220325685" duration="8836000" />
+      <workItem from="1659264101439" duration="1381000" />
     </task>
+    <task id="LOCAL-00001" summary="Project created">
+      <created>1659220862139</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1659220862139</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,5 +177,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Project created" />
+    <option name="LAST_COMMIT_MESSAGE" value="Project created" />
   </component>
 </project>
