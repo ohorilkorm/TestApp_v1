@@ -5,10 +5,3 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
-
-5.times do
-  user = User.create(username: Faker::Name.name)
-  5.times do
-    user.repositories.create(name: Faker::Name.name)
-  end
-end

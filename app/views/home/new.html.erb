@@ -1,8 +1,6 @@
-<h1> Home New</h1>
 <h3> Get Information about User </h3>
 
 <%= form_with model:@user, url: home_path, data: { turbo: false } do |form|%>
   <%= form.text_field :username%>
-  <%= form.text_field :reposlink%>
   <%= form.submit "Send request", class: "btn btn-primary"%>
 <%  end %>
