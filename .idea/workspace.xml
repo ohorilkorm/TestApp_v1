@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ec9c898e-10a4-4cd0-94f8-b443e6e6c044" name="Changes" comment="Add http requests to github, data processing, all main features ready for test">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="ec9c898e-10a4-4cd0-94f8-b443e6e6c044" name="Changes" comment="Add http requests to github, data processing, all main features ready for test" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -154,7 +152,7 @@
       <updated>1659220321353</updated>
       <workItem from="1659220325685" duration="8836000" />
       <workItem from="1659264101439" duration="8092000" />
-      <workItem from="1659272491045" duration="7501000" />
+      <workItem from="1659272491045" duration="7770000" />
     </task>
     <task id="LOCAL-00001" summary="Project created">
       <created>1659220862139</created>
@@ -191,7 +189,21 @@
       <option name="project" value="LOCAL" />
       <updated>1659279741424</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add http requests to github, data processing, all main features ready for test">
+      <created>1659287012149</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1659287012149</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add http requests to github, data processing, all main features ready for test">
+      <created>1659287017060</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1659287017060</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
