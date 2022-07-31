@@ -49,12 +49,15 @@ gem "bootsnap", require: false
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
-  gem "graphql"
   # Use pg as the database for Active Record
   #gem "pg"
 end
 
 gem "graphql"
+
+gem 'pg', group: :production
+gem 'rails_12factor', group: :production
+
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
