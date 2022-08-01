@@ -47,6 +47,7 @@ gem "bootsnap", require: false
 # gem "image_processing", "~> 1.2"
 
 group :development, :test do
+  gem 'rspec-rails'
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
   # Use pg as the database for Active Record
@@ -58,6 +59,9 @@ gem "graphql"
 gem 'sqlite3', group: :development
 gem 'pg', group: :production
 gem 'rails_12factor', group: :production
+gem 'rubocop', require: false
+
+gem 'jslint_on_rails'
 
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
