@@ -3,17 +3,18 @@ class HomeController < ApplicationController
   def new
     @user = User.new
   end
+
   def create
+    @title = ''
+    @userName = userParams['username']
 
-    @title = ""
-    @userName = user_params["username"]
+    userResult = JSON.parse(Net::HTTP.get(URI.parse("https://api.github.com/users/#{userParams['username']}")))
+    result = JSON.parse(Net::HTTP.get(URI.parse("https://api.github.com/users/#{userParams['username']}/repos")))
 
-    userResult = JSON.parse(Net::HTTP.get(URI.parse("https://api.github.com/users/#{user_params['username']}")))
-    result = JSON.parse(Net::HTTP.get(URI.parse("https://api.github.com/users/#{user_params['username']}/repos")))
-
-    if userResult["message"].nil?
+    if userResult['message'].nil?
+      @title = ''
     else
-      @title = userResult["message"]
+      @title = userResult['message']
       return
     end
 
@@ -28,12 +29,12 @@ class HomeController < ApplicationController
         }
     }'
 
-    variablesCreateUser = {"username": user_params["username"]}
+    variablesCreateUser = { "username": userParams['username'] }
     createUserResulte = JSON.parse(TestAppSchema.execute(createUser, variables: variablesCreateUser).to_json)
-    userId = createUserResulte["data"]["createUser"]["user"]["id"]
+    userId = createUserResulte['data']['createUser']['user']['id']
 
-    result.each { |res|
-      createRepository='
+    result.each do |res|
+      createRepository = '
       mutation CreateRepository($name: String!, $userId: Int!){
       createRepository( input:{name: $name, userId: $userId}) {
         repository{
@@ -45,9 +46,9 @@ class HomeController < ApplicationController
         }
       }'
 
-      variablesCreateRepository = {"name": res["name"], "userId": userId.to_i}
+      variablesCreateRepository = { "name": res['name'], "userId": userId.to_i }
       TestAppSchema.execute(createRepository, variables: variablesCreateRepository).to_json
-    }
+    end
 
     getUserInformation = '
     query getUserInformation($id: ID!){
@@ -59,19 +60,19 @@ class HomeController < ApplicationController
           repositoriesCount
        }
     }'
-    variablesCreateUser = {"id": userId}
-    getUserInformationResult = JSON.parse(TestAppSchema.execute(getUserInformation, variables: variablesCreateUser).to_json)
-    #render plain: getUserInformationResult
-    @repositories = Array.new
-    getUserInformationResult["data"]["user"]["repositories"].each { |r|
+    variablesCreateUser = { "id": userId }
+    getUserInformationResult = JSON.parse(TestAppSchema.execute(getUserInformation,
+                                                                variables: variablesCreateUser).to_json)
+    # render plain: getUserInformationResult
+    @repositories = []
+    getUserInformationResult['data']['user']['repositories'].each do |r|
       @repositories << r['name']
-    }
-
+    end
   end
 
   private
 
-  def user_params
+  def userParams
     params.require(:user).permit(:username)
   end
 end

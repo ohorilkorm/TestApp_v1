@@ -1,5 +1,5 @@
-class Mutations::CreateUser < Mutations::BaseMutation
-
+module Mutations
+  class CreateUser < Mutations::BaseMutation
     argument :username, String
 
     field :user, Types::UserType
@@ -9,14 +9,13 @@ class Mutations::CreateUser < Mutations::BaseMutation
       user = User.new(username: username)
       if user.save
         {
-         user: user,
-         errors: []
+          user: user, errors: []
         }
       else
         {
-          user: nil,
-          errors: user.errors.full_messages
-      }
+          user: nil, errors: user.errors.full_messages
+        }
       end
     end
+  end
 end

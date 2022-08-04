@@ -1,6 +1,6 @@
 <h2>Github user <em><%= @userName %></em> has the following repositories:</h2>
-<% @repositories.each do |rep| %>
-
+<% if(@repositories) %>
+  <% @repositories.each do |rep| %>
     <li><%= rep %></li>
-
+  <% end  %>
 <% end %>
