@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ec9c898e-10a4-4cd0-94f8-b443e6e6c044" name="Changes" comment="Added test of GitHub Api&#10;- github_user_request_test.rb&#10;- github_users_repos_test.rb&#10;&#10;Fixed all with rubocop">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+    <list default="true" id="ec9c898e-10a4-4cd0-94f8-b443e6e6c044" name="Changes" comment="Project done">
+      <change afterPath="$PROJECT_DIR$/spec/github_user_request_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/github_users_repos_test.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
@@ -39,8 +39,6 @@
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/github_user_request_test.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/github_users_repos_test.rb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/test/application_system_test_case.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/application_system_test_case.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/channels/application_cable/connection_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/channels/application_cable/connection_test.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/controllers/about_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/about_controller_test.rb" afterDir="false" />
@@ -56,23 +54,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Pull.Settings">
-    <option name="OPTIONS">
-      <set>
-        <option value="REBASE" />
-      </set>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="main" />
-        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RESET_MODE" value="HARD" />
-    <option name="SWAP_SIDES_IN_COMPARE_BRANCHES" value="true" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -84,18 +72,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/romanohorilko/Documents/RubyProjects/TestApp/app/views/main",
-    "nodejs_package_manager_path": "npm",
-    "ruby.rails.projectView.checked": "true",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.ruby.settings.RubyActiveModuleSdkConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/romanohorilko/Documents/RubyProjects/TestApp/app/views/main&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.ruby.settings.RubyActiveModuleSdkConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/views/main" />
@@ -214,8 +201,7 @@
       <workItem from="1659220325685" duration="8836000" />
       <workItem from="1659264101439" duration="8092000" />
       <workItem from="1659272491045" duration="18433000" />
-      <workItem from="1659620031863" duration="14712000" />
-      <workItem from="1659802540174" duration="9921000" />
+      <workItem from="1659620031863" duration="14324000" />
     </task>
     <task id="LOCAL-00001" summary="Project created">
       <created>1659220862139</created>
@@ -343,14 +329,7 @@
       <option name="project" value="LOCAL" />
       <updated>1659384340679</updated>
     </task>
-    <task id="LOCAL-00019" summary="Added test of GitHub Api&#10;- github_user_request_test.rb&#10;- github_users_repos_test.rb&#10;&#10;Fixed all with rubocop">
-      <created>1659648691776</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1659648691776</updated>
-    </task>
-    <option name="localTasksCounter" value="20" />
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -359,86 +338,6 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
-        <entry key="08e86ca5-07ea-463e-950a-3cd7ddde348b">
-          <value>
-            <State>
-              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="HEAD" />
-                      </list>
-                    </value>
-                  </entry>
-                  <entry key="structure">
-                    <value>
-                      <list>
-                        <option value="dir:/Users/romanohorilko/Documents/RubyProjects/TestApp/spec" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-        <entry key="3aec5817-3b4c-4b24-ac2e-d53cf91fe390">
-          <value>
-            <State>
-              <option name="CUSTOM_BOOLEAN_PROPERTIES">
-                <map>
-                  <entry key="Show.Git.Branches" value="true" />
-                </map>
-              </option>
-              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="development" />
-                      </list>
-                    </value>
-                  </entry>
-                  <entry key="structure">
-                    <value>
-                      <list>
-                        <option value="dir:/Users/romanohorilko/Documents/RubyProjects/TestApp/spec" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-        <entry key="6c762159-91b6-49f9-ba88-e119ffdc863b">
-          <value>
-            <State>
-              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="HEAD" />
-                      </list>
-                    </value>
-                  </entry>
-                  <entry key="roots">
-                    <value>
-                      <list>
-                        <option value="$PROJECT_DIR$" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
         <entry key="MAIN">
           <value>
             <State>
@@ -447,7 +346,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="development" />
+                        <option value="origin/development" />
                       </list>
                     </value>
                   </entry>
@@ -466,7 +365,6 @@
     <MESSAGE value="Add http requests to github, data processing, all main features ready for test" />
     <MESSAGE value="gem 'sqlite3' setup for deploy" />
     <MESSAGE value="Project done" />
-    <MESSAGE value="Added test of GitHub Api&#10;- github_user_request_test.rb&#10;- github_users_repos_test.rb&#10;&#10;Fixed all with rubocop" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added test of GitHub Api&#10;- github_user_request_test.rb&#10;- github_users_repos_test.rb&#10;&#10;Fixed all with rubocop" />
+    <option name="LAST_COMMIT_MESSAGE" value="Project done" />
   </component>
 </project>
