@@ -1,4 +1,3 @@
-
 require 'rails_helper'
 require 'rspec/rails'
 require 'net/http'
@@ -16,18 +15,17 @@ RSpec.describe 'Test graphql ' do
         }
     }'
 
-    variablesCreateUser = {"username": 'test'}
+    variablesCreateUser = { "username": 'test' }
     createUserResulte = JSON.parse(TestAppSchema.execute(createUser, variables: variablesCreateUser).to_json)
-    userId = createUserResulte["data"]["createUser"]["user"]["id"]
+    userId = createUserResulte['data']['createUser']['user']['id']
 
     expect(userId.nil?).to eq false
   end
 
   it 'Repo creation is valid with empty errors field' do
+    user = User.new(username: 'username')
 
-    user = User.new(username: "username")
-
-    createRepository='
+    createRepository = '
       mutation CreateRepository($name: String!, $userId: Int!){
       createRepository( input:{name: $name, userId: $userId}) {
         repository{
@@ -39,13 +37,11 @@ RSpec.describe 'Test graphql ' do
         }
       }'
 
-    variablesCreateRepository = {"name": 'test', "userId": user.id}
+    variablesCreateRepository = { "name": 'test', "userId": user.id }
     requestRes = TestAppSchema.execute(createRepository, variables: variablesCreateRepository).to_json
 
-    res = requestRes["errors"]["message"]
+    res = requestRes['errors']['message']
 
     expect(res.nil?).to eq true
   end
-
 end
-
