@@ -1,2 +1,3 @@
 class InformationController < ApplicationController
+
 end
