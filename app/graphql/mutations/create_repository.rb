@@ -1,11 +1,10 @@
 class Mutations::CreateRepository < Mutations::BaseMutation
-
   argument :name, String
   argument :userId, Integer
   field :repository, Types::RepositoryType
   field :errors, [String], null: false
 
-  def resolve(name:,userId:)
+  def resolve(name:, userId:)
     repository = Repository.new(name: name, user_id: userId)
     if repository.save
       {
